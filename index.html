@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memeland ($MEME)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: black;
+      font-family: 'Orbitron', sans-serif;
+      overflow: hidden;
+    }
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .container img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    /* Fun rotating Meme-Coin Animation */
+    .coin {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      width: 50px;
+      height: 50px;
+      background: url('https://i.imgur.com/Q8iPGmL.png') no-repeat center center;
+      background-size: contain;
+      animation: rotateCoin 5s infinite linear;
+    }
+
+    @keyframes rotateCoin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      color: #fffc00;
+      font-size: 3rem;
+      text-shadow: 0 0 20px #fffc00;
+    }
+
+    p {
+      color: #fff;
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+
+    .contract {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      padding: 1rem;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      margin-top: 1rem;
+    }
+
+    .btn {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: #ff4081;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 0 15px #ff4081;
+    }
+
+    .btn:hover {
+      background: #e73370;
+      box-shadow: 0 0 30px #e73370;
+    }
+
+    .socials {
+      margin-top: 2rem;
+    }
+
+    .socials a {
+      color: #1da1f2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .fun-facts {
+      background-color: #ff4081;
+      color: #fff;
+      padding: 2rem;
+      margin-top: 2rem;
+      text-align: center;
+      border-radius: 12px;
+    }
+
+    .fun-facts h2 {
+      font-size: 2rem;
+    }
+
+    .social-proof {
+      background-color: #1da1f2;
+      padding: 1rem;
+      color: #fff;
+      border-radius: 12px;
+      margin-top: 2rem;
+    }
+
+    .social-proof p {
+      font-size: 1.2rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .overlay {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://i.imgur.com/Q8iPGmL.png" alt="Memeland Background">
+    <div class="overlay">
+      <h1>Memeland ($MEME)</h1>
+      <p>No utility. No roadmap. Just pure meme energy. Join the movement, buy the meme, become the meme.</p>
+      <div class="contract">
+        <strong>Contract Address:</strong><br>
+        0x1234567890abcdef1234567890abcdef12345678
+      </div>
+      <a class="btn" href="https://www.dexscreener.com/ethereum/0x1234567890abcdef1234567890abcdef12345678" target="_blank">Buy $MEME Now</a>
+      <div class="socials">
+        <p><a href="https://twitter.com/memelandtoken" target="_blank">Follow us on Twitter</a></p>
+		 <p><a href="https://t.me/+iUYQpkbq5mxiYWM0" target="_blank">Join our Telegram Group</a></p>
+      </div>
+    </div>
+    <!-- Rotating Meme Coin -->
+    <div class="coin"></div>
+  </div>
+
+  <!-- Fun Facts Section -->
+  <section class="fun-facts">
+    <h2>Why $MEME?</h2>
+    <p>Memeland is not just a token. It's a movement. Get ready for:</p>
+    <ul>
+      <li>10,000 Memers joining daily</li>
+      <li>Endless meme-generating opportunities</li>
+      <li>Token rewards for sharing your memes</li>
+      <li>Global domination, one meme at a time!</li>
+    </ul>
+  </section>
+
+  <!-- Social Proof Section -->
+  <div class="social-proof">
+    <p>Over 10,000 memers already joined the movement!</p>
+  </div>
+
+</body>
+</html>
